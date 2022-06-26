@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project1-BLOgginG website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/67f06ca55e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;1,900&family=Cormorant+Garamond:wght@300&family=Lora&family=Shadows+Into+Light&family=Zen+Loop&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;1,900&family=Cormorant+Garamond:wght@300&family=Lora&family=Shadows+Into+Light&family=Tai+Heritage+Pro&family=Zen+Loop&display=swap" rel="stylesheet">  <style>
+    .carousel-item {
+      /* min-height: 1px; */
+      min-width:500px;
+    }
+
+    .crd .container {
+      width: 100%;
+      /* padding: 2px; */
+
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      /* justify-content: center; */
+
+    }
+    .modal-body{
+
+
+    }
+
+    .card {
+      width: 250px;
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+      transition: 2s;
+    }
+
+    .card-img-top {
+
+      display: block;
+      background-image:url(./imgs/wwwmap.jpg);
+      width: 100%;
+      border-radius: 5px;
+      height: 250px;
+      
+
+    }
+
+    .card:hover {
+      transform: scale(1.3);
+      z-index: 2;
+    }
+
+    /* modal */
+    .content {
+      width: 100%;
+      height: 250px;
+      /* margin-left: 50px; */
+      /* padding: 200px; */
+      font-family: 'Cormorant Garamond', serif;
+      box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+      /* background-image: url(./imgs/wwwmap.jpg); */
+      background-size: cover;
+      /* background-repeat: no-repeat; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<header>
+
+<!-- nav starts -->
+<nav class="navbar sticky-top bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="margin-left:40px; color: rgb(251, 179, 46);font-family: 'Tai Heritage Pro', serif; font-size:25px;">
+      <img src="/imgs/logo1.jpeg" alt="" width="70" height="50" class="d-inline-block align-text-top "><strong>BLOgginG</strong>
+    </a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="search" aria-label="Search">
+      <button class="btn btn-outline-warning" type="submit">LOGIN</button>
+    </form>
+  </div>
+</nav>
+</header>
+<!-- navbar ends -->
+<main>
+  <!-- slide begins -->
+  <div class="container-fluid" style="">
+    <div class="row">
+      <div class="">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imgs/slid3.jpg" class="d-block w-100 " alt="..." style="height: 750px;">
+              <div class="carousel-caption d-none d-md-block" style="padding-bottom:200px; font-family: 'Lora', serif;">
+                <h1 class="fw-normal fs-1" style="color:rgb(251, 247, 247);">Publish your passions, your way</h1>
+                <p class="fs-2 fw-lighter" style="color:rgb(251, 247, 247);">Do not follow where the path may lead. Go
+                  instead where there is no path and leave a trail.</p>
+                <button class="btn btn-dark btn-centre fs-4" style="color:orange;">Explore more</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./imgs/slid2.jpg" class="d-block w-100 " alt="..." style="height: 750px;">
+              <div class="carousel-caption d-none d-md-block" style="padding-bottom:200px; font-family: 'Lora', serif;">
+                <h1 class="fw-normal fs-1" style="color:rgb(251, 247, 247);">I haven't been everywhere, but it's on my
+                  list.
+                </h1>
+                <p class=" fs-2 fw-lighter " style="color:rgb(250, 246, 246);">Man cannot discover new oceans unless he
+                  has
+                  the courage to lose sight of the shore</p>
+                <button class="btn btn-dark btn-centre fs-4" style="color:orange;">Explore more</button>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div>
+                <img src="./imgs/slid5.jpg" class="d-block w-100" alt="..." style="height: 750px;">
+                <div class="carousel-caption d-none d-md-block " style="padding-bottom:200px; font-family: 'Lora', serif;">
+                  <h1 class=" fw-normal fs-1" style="color:rgb(251, 247, 247);">Have stories to tell not stuff to show
+                  </h1>
+                  <p class=" fs-2 fw-lighter" style="color:rgb(251, 247, 247);">We take photos as a return ticket to a
+                    moment
+                    otherwise gone...</p>
+                  <button class="btn btn-dark btn-centre fs-4" style="color:orange;">Explore more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <br>
+  <!-- slide section end  -->
+
+  <!-- div section -->
+<div class="container-fluid" style=" width:fit-content; margin-top:-25px;">
+  <div class="container-fluid"style= "font-family: 'Cormorant Garamond', serif;" >
+     <div class="row" >
+      <div class="col-lg-6 col-md-12 col-sm-12  fs-4" style="font-family:'Cormorant Garamond', serif; " >
+        <h2 class="text-warning" style="padding-top:160px;">
+         <strong> Embed your photos anywhere.</strong>
+        </h2>
+        <p class="text-dark">
+          With <strong><a href="" class="text-decoration-none">BLOgginG®</a></strong> hosting, there's no need to keep
+          uploading the same image over and over to different forums, websites, blogs, or marketplaces. Use our simple
+          embed link to copy and share to your favorite sites.
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <img src="./imgs/block1.jpg" alt="" style="width: 748px; height:400px; ">
+      </div>
+    </div><br>
+
+    <div class="container-fluid" >
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 fs-4" style="font-family: 'Cormorant Garamond', serif;" >
+        <h2 class="text-warning" style="padding-top:160px;">
+          <strong>Make awesome photos...</strong>
+        </h2>
+        <p class="text-dark">
+          Add brilliant filters, stickers, cropping, and annotations to make any image become the image it was meant
+          to be. Get the I-spent-hours-on-this look in seconds. Start unleashing your creativity today!
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <img src="./imgs/block2.jpg" alt="" style="width: 750px; height:400px;">
+      </div>
+
+    </div>
+  </div>
+  </d><br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 fs-4" style="font-family: 'Cormorant Garamond', serif;"  >
+        <h2 class="text-warning" style="padding-top:160px;">
+          <strong>YOUR privacy is our priority.</strong>
+        </h2>
+        <p class="text-dark">
+          With our intuitive privacy settings, BLOgginG gives you peace of mind in knowing that you are in control of
+          who can see your albums & images when sharing with friends or family. With BLOgginG's private encryption and
+          removal of EXIF data on downloads, you will never have to worry about losing control of your images or
+          personal information.
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <img src="./imgs/block3.jpg" alt="" style="width: 750px; height:400px; ">
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container-fluid"  >
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 fs-4" style="font-family: 'Cormorant Garamond', serif;" >
+        <h2 class="text-warning" style="padding-top:160px;">
+          <strong>Earn money</strong>
+        </h2>
+        <p class="text-dark text-centre">
+          Get paid for your hard work. Google AdSense can automatically display relevant targeted ads on your blog so
+          that you can earn income by posting about your passion.
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <img src="./imgs/block4.jpg" alt="" style="width: 750px; height:400px;  ">
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+  </div><br>
+
+  <!-- card -->
+  <div class="title" style="display: flex;
+  align-items:center;
+  justify-content:center;
+  padding: 25px; 
+  margin-top:35px;
+  color: rgb(224, 218, 206);
+  background-color:rgb(246, 163, 30);"
+  >
+    <h2><strong> For your travel </strong></h2>
+  </div>
+  <div class="crd" style="margin-right:80px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-12 col-sm-12">
+          <div class="card">
+            <img src="./imgs/card-offer1.png" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 col-sm-12">
+          <div class="card">
+            <img src="./imgs/card-offer2.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 col-sm-12">
+          <div class="card">
+            <img src="./imgs/card-offer3.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 col-sm-12">
+          <div class="card">
+            <img src="./imgs/card-offer6.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 col-sm-12">
+          <div class="card">
+            <img src="./imgs/card-offer5.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 col-sm-12">
+          <div class="card">
+            <img src="./imgs/card-offer4.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal -->
+
+  <!-- sigin button -->
+  <!-- Button trigger modal -->
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="content">
+        <button type="button" class="btn btn-warning text-centre" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+          style="width:250px; height: 50px; font-size: larger; ">Lets create a blog</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- sign in section -->
+  <div class="container-fluid" >
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title " style="margin-left:190px;" id="staticBackdropLabel">SIGN IN</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action=""
+              style=" font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; align-content: center;">
+              <div class="p-2 mt-2">
+                <label for="p1" class="text-warning">USERNAME</label>
+                <input type="text" name="" id="u1" class="form-control">
+              </div>
+              <div class="p-2 mt-2">
+                <label for="p1" class="text-warning">EMAIL</label>
+                <input type="email" name="" id="p1" class="form-control">
+              </div>
+              <div class="p-2 mt-2">
+                <label for="p1" class="text-warning">PASSWORD</label>
+                <input type="password" name="" id="p1" class="form-control">
+              </div>
+            </form>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">already have acc</button>
+              <button type="button" class="btn btn-warning">sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<!-- signin section ends -->
+<!-- footer section -->
+<footer>
+  <div class="container w-100 h4 border-top border-3 border-dark">
+    <div class="" style="display: flex;
+    align-items:center;
+    justify-content:center;
+    padding-top: 5px; 
+    color: orange;">
+      <div>
+        <i class="fa-solid fa-house border-end border-3 border-dark pe-3">
+          <link class="">HOME</link>
+        </i>
+      </div>
+      <div class="ps-3 pt-3">
+        <p>Privacy policy</p>
+      </div>
+    </div>
+
+    <div style=" display: flex;
+    align-items:center;
+    justify-content:center; color: orange;">
+      follow us on
+    </div>
+    <div class="icon " style="display: flex;
+    align-items:center;
+    justify-content:center;
+    padding-top: 40px;
+    color: orange;">
+      <div>
+        <i class="fa-brands fa-facebook fa-2xl" style="margin-right:20px;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="margin-right:20px;"></i>
+        <i class="fa-brands fa-twitter fa-2xl" style="margin-right:20px;"></i>
+        <i class="fa-brands fa-whatsapp fa-2xl" style="margin-right:20px;"></i>
+      </div>
+    </div>
+    <div class="footerContainer" style=" display: flex;
+    align-items:center;
+    justify-content:center; color: orange;  padding-top: 25px;">
+      <p>© copyright-2021 BLOginG.com,a Federal Not-for-profit Corporation. All rights reserved.</p>
+    </div>
+
+
+  </div>
+</footer>
+
+
+
+</body>
+
+</html>
